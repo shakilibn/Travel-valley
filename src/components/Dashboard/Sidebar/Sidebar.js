@@ -29,7 +29,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar col-md-2">
-            <div className="p-4 d-flex flex-column justify-content-between" style={{ height: '93vh' }}>
+            <div className="p-4 pb-5 d-flex flex-column justify-content-between" style={{ height: '93vh' }}>
                 <ul className="list-unstyled">
                     {loggedInUser.isAdmin ? <div>
                         <li>
