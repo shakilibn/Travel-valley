@@ -27,7 +27,7 @@ const ServiceForm = ({ modalIsOpen, closeModal, service }) => {
         // data.service = service;
         // data.date = new Date();
 
-        // fetch('http://localhost:5000/addService', {
+        // fetch('https://blooming-hollows-97264.herokuapp.com/addService', {
         //     method: 'POST',
         //     headers: {'Content-Type':'Application/json'},
         //     body: JSON.stringify()
@@ -43,7 +43,7 @@ const ServiceForm = ({ modalIsOpen, closeModal, service }) => {
         console.log(data);
         setFormData(data);
 
-        // fetch('http://localhost:5000/addBooking', {
+        // fetch('https://blooming-hollows-97264.herokuapp.com/addBooking', {
         //     method: 'POST',
         //     headers: { 'content-type': 'application/json' },
         //     body: JSON.stringify(data)

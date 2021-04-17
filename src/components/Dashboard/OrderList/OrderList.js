@@ -7,7 +7,7 @@ const OrderList = () => {
     const [tatus, setTatus] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5000/allBookings')
+        fetch('https://blooming-hollows-97264.herokuapp.com/allBookings')
             .then(res => res.json())
             .then(data => setOrderList(data))
     }, [orderList])
@@ -23,7 +23,7 @@ const OrderList = () => {
     }
 
     const updateStatus = (status) => {
-        fetch(`http://localhost:5000/update/${itemId}`, {
+        fetch(`https://blooming-hollows-97264.herokuapp.com/update/${itemId}`, {
             method: 'PATCH',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(status)

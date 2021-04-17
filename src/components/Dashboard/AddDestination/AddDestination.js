@@ -16,7 +16,7 @@ const AddDestination = () => {
             imageURL: imageURL
         }
 
-        const url = `http://localhost:5000/addDestination`;
+        const url = `https://blooming-hollows-97264.herokuapp.com/addDestination`;
 
         fetch(url, {
             method: 'POST',

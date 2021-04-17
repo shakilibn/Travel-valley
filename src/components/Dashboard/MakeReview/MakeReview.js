@@ -16,7 +16,7 @@ const MakeReview = () => {
     }
 
     const handleSubmit = () => {
-        fetch('http://localhost:5000/addReview', {
+        fetch('https://blooming-hollows-97264.herokuapp.com/addReview', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(review)

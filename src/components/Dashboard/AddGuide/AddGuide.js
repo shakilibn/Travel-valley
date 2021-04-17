@@ -16,7 +16,7 @@ const AddGuide = () => {
             imageURL: imageURL
         }
 
-        const url = `http://localhost:5000/addGuide`;
+        const url = `https://blooming-hollows-97264.herokuapp.com/addGuide`;
 
         fetch(url, {
             method: 'POST',

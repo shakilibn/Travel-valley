@@ -17,7 +17,7 @@ const AddService = () => {
             imageURL: imageURL
         }
 
-        const url = `http://localhost:5000/addService`;
+        const url = `https://blooming-hollows-97264.herokuapp.com/addService`;
 
         fetch(url, {
             method: 'POST',

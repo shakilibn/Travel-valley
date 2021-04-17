@@ -21,7 +21,7 @@ const MakeBooking = () => {
     const [confirm, setConfirm] = useState(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/service/${serviceId}`;
+        const url = `https://blooming-hollows-97264.herokuapp.com/service/${serviceId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data))

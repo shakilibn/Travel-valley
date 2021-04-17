@@ -45,7 +45,7 @@ const SimplePayment = ({ booking }) => {
     };
 
     const postToDatabase = () => {
-        fetch('http://localhost:5000/addBooking', {
+        fetch('https://blooming-hollows-97264.herokuapp.com/addBooking', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(booking)

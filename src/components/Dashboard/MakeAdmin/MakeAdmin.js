@@ -12,7 +12,7 @@ const MakeAdmin = () => {
         setEmail(newEmail);
     }
     const handleSubmit = () => {
-        fetch('http://localhost:5000/addAdmin', {
+        fetch('https://blooming-hollows-97264.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(email)
