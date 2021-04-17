@@ -5,9 +5,9 @@ const BookingListDetails = ({ bookingList }) => {
     return (
         <div className="col-md-3 my-3">
             <div className="d-flex justify-content-center">
-                <Card className="p-2"  style={{ width: '18rem' }}>
+                <Card className="p-2" style={{ width: '18rem' }}>
                     <div className="d-flex justify-content-around">
-                        <Card.Img style={{ height: '50px', width: '50px' }} className="rounded" variant="top" src={bookingList.imageURL} alt="image"/>
+                        <Card.Img style={{ height: '50px', width: '50px' }} className="rounded-circle" variant="top" src={bookingList.imageURL} alt="image" />
                         <Button className="brand-btn" variant="primary">{bookingList.status}</Button>
                     </div>
                     <Card.Body>
