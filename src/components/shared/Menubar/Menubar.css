@@ -1,3 +1,16 @@
 .menu-bar {
-    background-color:#282846;
+    background-color:#262626;
+}
+.brand-text {
+    color: #79B530;
+}
+.brand-text2 {
+    color: #009FE2;
+}
+.brand-text3 {
+    color: #ff8303;
+}
+.color-btn {
+    background-color: #79B530 !important;
+    border:none !important;
 }

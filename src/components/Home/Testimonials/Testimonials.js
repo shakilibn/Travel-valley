@@ -47,7 +47,7 @@ const Testimonials = () => {
     return (
         <section className="mt-5 pt-4 testimonials-container">
             <div className="p-4">
-                <h5 className="text-center mb-5">Testimonials</h5>
+                <h3 className="text-center mb-5 ">Testimonials</h3>
                 <div className="row">
                     {
                         reviews.map(testimonial => <TestimonialDetails key={testimonial._id} testimonial={testimonial}/>)

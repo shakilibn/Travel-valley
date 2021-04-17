@@ -9,7 +9,7 @@ const DestinationDetails = ({destination}) => {
                     <Card.Img variant="top" style={{ height: '250px' }} src={destination.imageURL} />
                     <Card.Body>
                         <Card.Title>{destination.name}</Card.Title>
-                        <Card.Text><small>{destination.description}</small></Card.Text>
+                        <Card.Text><small><span className="text-secondary">{destination.description}</span></small></Card.Text>
                     </Card.Body>
                 </Card>
             </div>

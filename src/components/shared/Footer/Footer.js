@@ -47,12 +47,13 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-primary">+890 234 5678</button>
+                            <button className="btn btn-primary brand-btn">+890 234 5678</button>
                         </div>
                     </FooterCol>
                 </div>
+                <hr/>
                 <div className="copyRight text-center">
-                    <p>Copyright {(new Date()).getFullYear()} All Rights Reserved, Shakil</p>
+                    <p className="text-secondary pb-3">Copyright {(new Date()).getFullYear()} All Rights Reserved, Shakil</p>
                 </div>
             </div>
         </footer>

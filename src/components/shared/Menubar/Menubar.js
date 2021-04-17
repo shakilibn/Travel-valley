@@ -9,7 +9,7 @@ const Menubar = () => {
     return (
         <div>
             <Navbar className="d-flex justify-content-between menu-bar" variant="dark" expand="lg">
-                <Navbar.Brand as={Link} to="/"><strong>Travel valley</strong></Navbar.Brand>
+                <Navbar.Brand style={{color:'#79B530'}} as={Link} to="/"><strong>Travel valley</strong></Navbar.Brand>
                 <div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -19,8 +19,8 @@ const Menubar = () => {
                             <Nav.Link as={Link} to="/travel-guide">Travel Guide</Nav.Link>
                             <Nav.Link as={Link} to="/feature">Feature</Nav.Link>
                             <Nav.Link as={Link} to="/discover">Discover</Nav.Link>
-                            {loggedInUser.isSignedIn ? <Nav.Link ><strong>{loggedInUser.name}</strong></Nav.Link> :
-                                <Button as={Link} to="/login" variant="outline-light">Login</Button>}
+                            {loggedInUser.isSignedIn ? <Nav.Link ><strong className="brand-text">{loggedInUser.name}</strong></Nav.Link> :
+                                <Button className="color-btn" as={Link} to="/login" variant="primary">Login</Button>}
                         </Nav>
                     </Navbar.Collapse>
                 </div>

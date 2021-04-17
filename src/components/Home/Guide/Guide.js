@@ -12,8 +12,8 @@ const Guide = () => {
     return (
         <section className="container d-flex justify-content-around mt-5 pt-4">
             <div>
-                <h1 className="mb-4">Meet Our Local Guides</h1>
-                <p className="mb-4"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nostrum placeat sed tempore obcaecati ducimus et sint maxime nisi excepturi laudantium magni, quis culpa iure nesciunt. Vero enim laboriosam aut minus dicta ratione in dolorem animi neque iste eligendi beatae, laudantium odit iure sed. Expedita, error quos. Labore, dicta aut!</strong></p>
+                <h1 className="mb-4 brand-text2">Meet Our Local Guides</h1>
+                <p className="mb-4 text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nostrum placeat sed tempore obcaecati ducimus et sint maxime nisi excepturi laudantium magni, quis culpa iure nesciunt. Vero enim laboriosam aut minus dicta ratione in dolorem animi neque iste eligendi beatae, laudantium odit iure sed. Expedita, error quos. Labore, dicta aut!</p>
                 <div className="row">
                     {
                         services.map(guide => <GuideDetails key={guide._id} guide={guide}></GuideDetails>)

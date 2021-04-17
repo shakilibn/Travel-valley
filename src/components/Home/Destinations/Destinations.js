@@ -12,9 +12,9 @@ const Destinations = () => {
     return (
         <section className="container d-flex justify-content-around mt-5 pt-4 text-center">
             <div>
-                <h5 className="text-center">Places</h5>
-                <h1 className="text-center mb-4">Hundreds of...Destinations Worldwide.</h1>
-                <p className="text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero odit a doloribus dignissimos quos, sequi itaque in enim optio?</p>
+                <h4 className="text-center brand-text2">Places</h4>
+                <h1 className="text-center mb-4">Hundreds of...<span className="brand-text">Destinations Worldwide.</span> </h1>
+                <p className="text-center mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero odit a doloribus dignissimos quos, sequi itaque in enim optio?</p>
                 <div className="row">
                     {
                         services.map(destination => <DestinationDetails key={destination._id} destination={destination}/>)

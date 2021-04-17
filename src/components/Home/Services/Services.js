@@ -12,8 +12,8 @@ const Services = () => {
     return (
         <section className="container d-flex justify-content-around mt-5 pt-4">
             <div>
-                <h5 className="text-center mb-4">Our Services</h5>
-                <p className="text-center mb-4"><strong>We offer most competitive rates and offers for wonderful and beautiful places.</strong></p>
+                <h4 className="text-center mb-5 brand-text2">Our Services</h4>
+                <p className="text-center mb-4 text-secondary">We offer most competitive rates and offers for wonderful and beautiful places.</p>
                 <div className="row">
                     {
                         services.map(service => <ServiceDetails key={service._id} service={service}></ServiceDetails>)

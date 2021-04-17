@@ -12,7 +12,7 @@ const GuideDetails = ({ guide }) => {
                     <Card.Img variant="top" style={{ height: '300px' }} src={guide.imageURL} />
                     <Card.Body>
                         <Card.Title>{guide.name}</Card.Title>
-                            <Button className="guide-btn" variant="primary" block>Travel with me</Button>
+                            <Button className="brand-btn" variant="primary" block>Travel with me</Button>
                             {/* <Button className="guide-btn" as={Link} to={`/guide/${guide._id}`} variant="primary" block>Travel with me</Button> */}
                         </Card.Body>
                 </Card>
