@@ -3,6 +3,8 @@ import { useContext, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from '../../../App';
 import './sidebar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBox, faPlus, faUserPlus, faThLarge, faShoppingCart, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -19,73 +21,39 @@ const Sidebar = () => {
     }, [])
     return (
         <div className="sidebar col-md-2">
-            <div className=" p-3" style={{ height: '100vh' }}>
+            <div className="p-4" style={{ height: '100vh' }}>
                 <ul className="list-unstyled">
-
-                    <li>
-                        <Link to="/orderList">Order List</Link>
-                    </li>
-                    <li>
-                        <Link to="/addService">Add service</Link>
-                    </li>
-                    <li>
-                        <Link to="/addGuide">Add Guide</Link>
-                    </li>
-                    <li>
-                        <Link to="/addDestination">Add Destination</Link>
-                    </li>
-                    <li>
-                        <Link to="/makeAdmin" >Make Admin</Link>
-                    </li>
-                    <li>
-                        <Link to="/manageServices" >Manage Services</Link>
-                    </li>
-                    <li>
-                        <Link to="/bookingList">Booking list</Link>
-                    </li>
-                    <li>
-                        <Link to="/book">Book</Link>
-                    </li>
-                    <li>
-                        <Link to="/bookingList">Booking list</Link>
-                    </li>
-                    <li>
-                        <Link to="/review">Review</Link>
-                    </li>
-                    {/* {isAdmin ? <div>
+                    {isAdmin ? <div>
                         <li>
-                            <Link to="/orderList">Order List</Link>
+                            <Link className="text-white" to="/orderList"><FontAwesomeIcon icon={faBox} /> <span>Order List</span></Link>
                         </li>
                         <li>
-                            <Link to="/addService">Add service</Link>
+                            <Link className="text-white" to="/addService"><FontAwesomeIcon icon={faPlus} /> <span>Add service</span></Link>
                         </li>
                         <li>
-                            <Link to="/addGuide">Add Guide</Link>
+                            <Link className="text-white" to="/addGuide"><FontAwesomeIcon icon={faUserPlus} /> <span>Add Guide</span></Link>
                         </li>
                         <li>
-                            <Link to="/addDestination">Add Destination</Link>
+                            <Link className="text-white" to="/addDestination"><FontAwesomeIcon icon={faPlus} /> <span>Add Destination</span></Link>
                         </li>
                         <li>
-                            <Link to="/makeAdmin" >Make Admin</Link>
+                            <Link className="text-white" to="/makeAdmin" ><FontAwesomeIcon icon={faUserPlus} /> <span>Make Admin</span></Link>
                         </li>
                         <li>
-                            <Link to="/manageServices" >Manage Services</Link>
-                        </li>
-                        <li>
-                            <Link to="/bookingList">Booking list</Link>
+                            <Link className="text-white" to="/manageServices" ><FontAwesomeIcon icon={faThLarge} /> <span>Manage Services</span></Link>
                         </li>
                     </div> :
                     <div>
                         <li>
-                            <Link to="/book">Book</Link>
+                            <Link className="text-white" to="/book"><FontAwesomeIcon icon={faShoppingCart} /> <span>Book</span></Link>
                         </li>
                         <li>
-                            <Link to="/bookingList">Booking list</Link>
+                            <Link className="text-white" to="/bookingList"><FontAwesomeIcon icon={faBox} /> <span>Booking list</span></Link>
                         </li>
                         <li>
-                            <Link to="/review">Review</Link>
+                            <Link className="text-white" to="/review"><FontAwesomeIcon icon={faCommentDots} /> <span>Review</span></Link>
                         </li>
-                    </div>} */}
+                    </div>}                    
                 </ul>
             </div>
         </div>

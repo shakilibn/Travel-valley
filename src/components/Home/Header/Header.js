@@ -7,8 +7,9 @@ const Header = () => {
         <section>
             <div className="row p-5 header-container">
                 <div className="col-md-6 p-5">
-                    <h1 className="mb-4 text-white">Make Your <br/> Life Extraordinary</h1>
+                    <h1 className="mb-5 text-white">Make Your <br/> Life Extraordinary</h1>
                     <p className="mb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi velit voluptas delectus? Doloremque, tempora. Consectetur cum ratione error maiores recusandae.</p>
+                    <p className="mb-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi velit voluptas delectus? Doloremque, tempora. Consectetur cum ratione error maiores recusandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi velit voluptas delectus? Doloremque, tempora. Consectetur cum ratione error maiores recusandae.</p>
                     <button className="btn btn-primary brand-btn">Booking</button>
                 </div>
                 <div className="col-md-6">

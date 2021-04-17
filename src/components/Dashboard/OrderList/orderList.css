@@ -1,0 +1,15 @@
+.right-area {
+    background-color:rgb(213, 228, 208);
+}
+.right-interior{
+    background-color:#ffffff;
+    border-radius: 5px;    
+    padding:20px;
+    box-shadow: 4px 4px 10px lightgrey;
+    margin-top:10px;
+}
+.loading-spinner {
+    position: absolute;
+    top:50%;
+    left:50%;
+}

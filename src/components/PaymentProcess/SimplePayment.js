@@ -83,7 +83,7 @@ const SimplePayment = ({ booking }) => {
 
             <form className="mt-3" onSubmit={handleSubmit}>
                 <CardElement />
-                <button className="mt-3" type="submit" disabled={!stripe}>Pay</button>
+                <button className="mt-3 add-btn" type="submit" disabled={!stripe}>Pay</button>
             </form>
         </div>
     );

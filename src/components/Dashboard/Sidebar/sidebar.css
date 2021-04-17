@@ -1,3 +1,13 @@
 .sidebar {
-    background-color:aquamarine;
+    background-image: linear-gradient(-45deg, #00B28E, #79B530);
+}
+.sidebar li {
+    margin-bottom: 1em;
+}
+.sidebar li:hover span {
+    display: inline-block;
+    transform: translate(5px)
+}
+.sidebar svg {
+    margin-right:5px;
 }

@@ -41,9 +41,9 @@ const Login = () => {
     }
 
     return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center login-container">
             <div className="login-area ">
-                <h2 className="mb-3">Travel Valley</h2>
+                <h2 className="mb-3 brand-text">Travel Valley</h2>
                 <h5 className="mb-5">Login</h5>
                 <input type="text" className="form-control mb-3" placeholder="username" />
                 <input type="text" className="form-control mb-5" placeholder="password" />

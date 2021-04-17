@@ -1,6 +1,10 @@
 body {
     /* background-color: #f9f3f3; */
 }
+.login-container {
+    background-color: rgb(213, 228, 208);
+    min-height: 100vh;
+}
 .login-area {
     width:350px;
     border-radius: 5px;

@@ -53,26 +53,32 @@ const AddGuide = () => {
     return (
         <section className="row">
             <Sidebar />
-            <div className="col-md-10 p-5 add-guide">
-                <h4>Add Guide</h4>
-                <form className="row mt-5" action="" onSubmit={handleSubmit}>
-                    <div className="col-md-6 mb-3">
-                        <label htmlFor="name"><strong>Guide name</strong></label>
-                        <input onBlur={handleBlur} name="name" type="text" className="form-control mb-4" placeholder="Guide title" />
+            <div className="col-md-10 right-area">
+                <div className="right-interior">
+                    <h4>Add Guide</h4>
+                    <form className="mt-5" action="" onSubmit={handleSubmit}>
+                        <div className="row">
+                            <div className="col-md-6 mb-3">
+                                <label htmlFor="name"><strong>Guide name</strong></label>
+                                <input onBlur={handleBlur} name="name" type="text" className="form-control mb-4" placeholder="Guide title" />
 
-                        <label htmlFor="description"><strong>Guide Description</strong></label>
-                        <textarea rows="4" onBlur={handleBlur} name="description" type="text" className="form-control" placeholder="Guide description" ></textarea>
-                    </div>
-                    <div className="col-md-6">
-                        <label htmlFor="price"><strong>Guide charge</strong></label>
-                        <input onBlur={handleBlur} name="price" type="text" className="form-control mb-4" placeholder="Guide Charge" />
+                                <label htmlFor="description"><strong>Guide Description</strong></label>
+                                <textarea rows="4" onBlur={handleBlur} name="description" type="text" className="form-control" placeholder="Guide description" ></textarea>
+                            </div>
+                            <div className="col-md-6">
+                                <label htmlFor="price"><strong>Guide charge</strong></label>
+                                <input onBlur={handleBlur} name="price" type="text" className="form-control mb-4" placeholder="Guide Charge" />
 
-                        <label htmlFor="file"><strong>Image</strong></label><br />
-                        <input onChange={handleFileUpload} type="file" name="file" /><br />
-                    </div>
+                                <label htmlFor="file"><strong>Image</strong></label><br />
+                                <input onChange={handleFileUpload} type="file" name="file" /><br />
+                            </div>
+                        </div>
 
-                    <input type="submit" value="submit" />
-                </form>
+                        <div className="right-side-btn">
+                            <input className="add-btn" type="submit" value="submit" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     );

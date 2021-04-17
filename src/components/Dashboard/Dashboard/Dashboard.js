@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { UserContext } from '../../../App';
 import Menubar from '../../shared/Menubar/Menubar';
@@ -12,11 +12,22 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Dashboard = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+    const [isAdmin, setIsAdmin] = useState(false);
+
+    useEffect(() => {
+        fetch('https://blooming-hollows-97264.herokuapp.com/isAdmin', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email: loggedInUser.email })
+        })
+            .then(res => res.json())
+            .then(data => setIsAdmin(data))
+    }, [])
 
     return (
         <section>
-            <div className="">
-                { loggedInUser.email ? <OrderList /> : <MakeBooking /> }
+            <div>
+                { isAdmin ? <OrderList /> : <MakeBooking /> }
             </div>
         </section>
     );

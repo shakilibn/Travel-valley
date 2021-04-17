@@ -1,3 +1,11 @@
-.add-service {
-    background-color: gray;;
+.add-btn {
+    background-color: #79B530;
+    padding:10px 30px;
+    border:none;
+    color:white;
+    border-radius: 5px;
+}
+.right-side-btn {
+    display:flex;
+    justify-content:flex-end;
 }

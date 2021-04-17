@@ -53,26 +53,32 @@ const AddDestination = () => {
     return (
         <section className="row">
             <Sidebar />
-            <div className="col-md-10 p-5 add-destination">
-                <h4>Add Destination</h4>
-                <form className="row mt-5" action="" onSubmit={handleSubmit}>
-                    <div className="col-md-6 mb-3">
-                        <label htmlFor="name"><strong>Destination name</strong></label>
-                        <input onBlur={handleBlur} name="name" type="text" className="form-control mb-4" placeholder="Destination title" />
+            <div className="col-md-10 right-area">
+                <div className="right-interior">
+                    <h4 className="">Add Destination</h4>
+                    <form className="mt-5" action="" onSubmit={handleSubmit}>
+                        <div className="row">
+                            <div className="col-md-6 mb-3">
+                                <label htmlFor="name"><strong>Destination name</strong></label>
+                                <input onBlur={handleBlur} name="name" type="text" className="form-control mb-4" placeholder="Destination title" />
 
-                        <label htmlFor="description"><strong>Destination Description</strong></label>
-                        <textarea rows="4" onBlur={handleBlur} name="description" type="text" className="form-control" placeholder="Destination description" ></textarea>
-                    </div>
-                    <div className="col-md-6">
-                        <label htmlFor="price"><strong>Destination charge</strong></label>
-                        <input onBlur={handleBlur} name="price" type="text" className="form-control mb-4" placeholder="Destination Charge" />
+                                <label htmlFor="description"><strong>Destination Description</strong></label>
+                                <textarea rows="4" onBlur={handleBlur} name="description" type="text" className="form-control" placeholder="Destination description" ></textarea>
+                            </div>
+                            <div className="col-md-6">
+                                <label htmlFor="price"><strong>Destination charge</strong></label>
+                                <input onBlur={handleBlur} name="price" type="text" className="form-control mb-4" placeholder="Destination Charge" />
 
-                        <label htmlFor="file"><strong>Image</strong></label><br />
-                        <input onChange={handleFileUpload} type="file" name="file" /><br />
-                    </div>
+                                <label htmlFor="file"><strong>Image</strong></label><br />
+                                <input onChange={handleFileUpload} type="file" name="file" /><br />
+                            </div>
+                        </div>
 
-                    <input type="submit" value="submit" />
-                </form>
+                        <div className="right-side-btn">
+                            <input className="add-btn" type="submit" value="submit" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     );
