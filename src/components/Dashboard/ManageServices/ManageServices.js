@@ -51,7 +51,7 @@ const ManageServices = () => {
                             {
                                 services.map(service =>
                                     <tr>
-                                        <td><img style={{ height: '30px' }} src={service.imageURL} alt="" /></td>
+                                        <td><img className="rounded" style={{ height: '30px' }} src={service.imageURL} alt="" /></td>
                                         <td>{service.name}</td>
                                         <td>{service.description}</td>
                                         <td>{service.price}</td>

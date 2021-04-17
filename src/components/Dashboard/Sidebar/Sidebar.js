@@ -8,22 +8,12 @@ import { faBox, faPlus, faUserPlus, faThLarge, faShoppingCart, faCommentDots } f
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-    const [isAdmin, setIsAdmin] = useState(false);
-
-    useEffect(() => {
-        fetch('https://blooming-hollows-97264.herokuapp.com/isAdmin', {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ email: loggedInUser.email })
-        })
-            .then(res => res.json())
-            .then(data => setIsAdmin(data))
-    }, [])
+   
     return (
         <div className="sidebar col-md-2">
             <div className="p-4" style={{ height: '100vh' }}>
                 <ul className="list-unstyled">
-                    {isAdmin ? <div>
+                    {loggedInUser.isAdmin ? <div>
                         <li>
                             <Link className="text-white" to="/orderList"><FontAwesomeIcon icon={faBox} /> <span>Order List</span></Link>
                         </li>

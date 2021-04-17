@@ -32,7 +32,7 @@ const MakeReview = () => {
             <Sidebar />
             <div className="col-md-10 right-area">
                 <div className="right-interior">
-                    <h4>Review</h4>
+                    <h4 className="mb-5">Review</h4>
                     <form action="">
                         <input onBlur={handleBlur} className="form-control w-50 mb-3" type="text" name="name" placeholder="Your name" />
                         <input onBlur={handleBlur} className="form-control w-50 mb-3" type="text" name="designation" placeholder="Company's name, Designation" />

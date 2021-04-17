@@ -7,8 +7,8 @@ const BookingListDetails = ({ bookingList }) => {
             <div className="d-flex justify-content-center">
                 <Card className="p-2"  style={{ width: '18rem' }}>
                     <div className="d-flex justify-content-around">
-                        <Card.Img style={{ height: '50px', width: '50px' }} className="" variant="top" src={bookingList.imageURL} alt="image"/>
-                        <Button variant="primary">{bookingList.status}</Button>
+                        <Card.Img style={{ height: '50px', width: '50px' }} className="rounded" variant="top" src={bookingList.imageURL} alt="image"/>
+                        <Button className="brand-btn" variant="primary">{bookingList.status}</Button>
                     </div>
                     <Card.Body>
                         <Card.Title>{bookingList.name}</Card.Title>

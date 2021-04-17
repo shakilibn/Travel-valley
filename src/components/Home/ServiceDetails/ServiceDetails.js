@@ -9,10 +9,10 @@ const ServiceDetails = ({ service }) => {
     
     return (
         <div className="col-md-4">
-            <div className=" d-flex justify-content-center">
-                <Card className="mx-2 my-3 shadow" style={{ width: '20rem' }}>
+            <div className=" d-flex justify-content-center service-card">
+                <Card className="mx-2 my-3 shadow service-card" style={{ width: '20rem', overflow: 'hidden' }}>
                     <Card.Img variant="top" style={{ height: '220px' }} src={service.imageURL} />
-                    <Card.Body>
+                    <Card.Body style={{zIndex:'1', backgroundColor:'white'}}>
                         <Card.Title>{service.name}</Card.Title>
                         <Card.Text><FontAwesomeIcon className="text-secondary" icon={faGlobe} /><span className="text-secondary"> {service.description}</span></Card.Text>
                         <div className="d-flex justify-content-between">

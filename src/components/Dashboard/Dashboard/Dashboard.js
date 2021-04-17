@@ -12,7 +12,6 @@ import Sidebar from '../Sidebar/Sidebar';
 
 const Dashboard = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
-    const [isAdmin, setIsAdmin] = useState(false);
 
     useEffect(() => {
         fetch('https://blooming-hollows-97264.herokuapp.com/isAdmin', {
@@ -21,13 +20,17 @@ const Dashboard = () => {
             body: JSON.stringify({ email: loggedInUser.email })
         })
             .then(res => res.json())
-            .then(data => setIsAdmin(data))
+            .then(data => {
+                const loggedInfo = {...loggedInUser};
+                loggedInfo.isAdmin = data;
+                setLoggedInUser(loggedInfo);
+            })
     }, [])
 
     return (
         <section>
             <div>
-                { isAdmin ? <OrderList /> : <MakeBooking /> }
+                { loggedInUser.isAdmin ? <OrderList /> : <MakeBooking /> }
             </div>
         </section>
     );

@@ -18,7 +18,21 @@ const MakeBooking = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [service, setService] = useState({});
     const [confirm, setConfirm] = useState(false);
-    const [serviceName, setServiceName] = useState('');
+    const [serviceName, setServiceName] = useState(''); 
+
+    useEffect(() => {
+        fetch('https://blooming-hollows-97264.herokuapp.com/isAdmin', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email: loggedInUser.email })
+        })
+            .then(res => res.json())
+            .then(data => {
+                const loggedInfo = {...loggedInUser};
+                loggedInfo.isAdmin = data;
+                setLoggedInUser(loggedInfo);
+            })
+    }, [])
 
     useEffect(() => {
         const url = `https://blooming-hollows-97264.herokuapp.com/service/${serviceId}`;
