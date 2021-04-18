@@ -27,17 +27,12 @@ const BookingList = () => {
 
             <div className="col-md-10 right-area">
                 <h4 className="mt-3 mb-3">Service List</h4>
-                {loggedInUser.email ?
-                    <div>
-                        {loading ? <Spinner className="loading-spinner" animation="border" /> :
-                            <div className="row">
-                                {
-                                    bookingList.map(bookingList => <BookingListDetails key={bookingList._id} bookingList={bookingList} />)
-                                }
-                            </div>}
-                    </div> :
-                    <p><strong>You have not login yet.!</strong></p>
-                }
+                {loading ? <Spinner className="loading-spinner" animation="border" /> :
+                    <div className="row">
+                        {
+                            bookingList.map(bookingList => <BookingListDetails key={bookingList._id} bookingList={bookingList} />)
+                        }
+                    </div>}
             </div>
         </section>
     );
