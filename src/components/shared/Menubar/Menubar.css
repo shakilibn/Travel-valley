@@ -13,4 +13,10 @@
 .color-btn {
     background-color: #79B530 !important;
     border:none !important;
+    padding:7px 20px !important;
+}
+.brand-btn:hover{
+    background-color: #578d14 !important;
+    font-size: 17px;
+    transition: font-size 0.7s;
 }

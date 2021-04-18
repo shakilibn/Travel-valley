@@ -19,7 +19,7 @@ const TestimonialDetails = ({ testimonial }) => {
                 <FontAwesomeIcon className="star-icon" icon={faStar} />
                 <FontAwesomeIcon className="star-icon" icon={faStar} />
                 <FontAwesomeIcon className="star-icon" icon={faStar} />
-                <p className="mt-4">{testimonial.description}</p>
+                <p className="mt-4 text-secondary">{testimonial.description}</p>
 
             </div>
         </div>

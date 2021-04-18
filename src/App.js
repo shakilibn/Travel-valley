@@ -20,6 +20,9 @@ import OrderList from './components/Dashboard/OrderList/OrderList';
 import ManageServices from './components/Dashboard/ManageServices/ManageServices';
 import AddGuide from './components/Dashboard/AddGuide/AddGuide';
 import AddDestination from './components/Dashboard/AddDestination/AddDestination';
+import Services from './components/Home/Services/Services';
+import Guide from './components/Home/Guide/Guide';
+import FeaturedService from './components/Home/FeaturedService/FeaturedService';
 
 export const UserContext = createContext();
 
@@ -45,49 +48,61 @@ function App() {
             <Login />
           </Route>
 
-          <Route path="/dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/book">
+          <PrivateRoute path="/book">
             <MakeBooking />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/bookingList">
+          <PrivateRoute path="/bookingList">
             <BookingList />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/review">
+          <PrivateRoute path="/review">
             <MakeReview />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/orderList">
+          <PrivateRoute path="/orderList">
             <OrderList />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/addService">
+          <PrivateRoute path="/addService">
             <AddService />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/addGuide">
+          <PrivateRoute path="/addGuide">
             <AddGuide />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/addDestination">
+          <PrivateRoute path="/addDestination">
             <AddDestination />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/makeAdmin">
+          <PrivateRoute path="/makeAdmin">
             <MakeAdmin />
-          </Route>
+          </PrivateRoute>
 
-          <Route path="/manageServices">
+          <PrivateRoute path="/manageServices">
             <ManageServices />
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute path="/service/:serviceId">
             <MakeBooking />
           </PrivateRoute>
+
+          <Route path="/services">
+            <Services />
+          </Route>
+
+          <Route path="/travel-guide">
+            <Guide />
+          </Route>
+
+          <Route path="/feature">
+            <FeaturedService />
+          </Route>
 
         </Switch>
       </Router>

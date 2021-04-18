@@ -15,12 +15,12 @@ const Menubar = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto align-items-end">
                             <Nav.Link as={Link} to="/">Home</Nav.Link>
-                            {loggedInUser.email && <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>}
-                            <Nav.Link as={Link} to="/travel-guide">Travel Guide</Nav.Link>
-                            <Nav.Link as={Link} to="/feature">Feature</Nav.Link>
-                            <Nav.Link as={Link} to="/discover">Discover</Nav.Link>
-                            {loggedInUser.isSignedIn ? <Nav.Link ><strong className="brand-text">{loggedInUser.name}</strong></Nav.Link> :
-                                <Button className="color-btn" as={Link} to="/login" variant="primary">Login</Button>}
+                            {loggedInUser.email && <Nav.Link className="ml-4" as={Link} to="/dashboard">Dashboard</Nav.Link>}
+                            <Nav.Link className="ml-4" as={Link} to="/services">Services</Nav.Link>
+                            <Nav.Link className="ml-4" as={Link} to="/travel-guide">Travel Guide</Nav.Link>
+                            <Nav.Link className="ml-4" as={Link} to="/feature">Feature</Nav.Link>
+                            {loggedInUser.isSignedIn ? <Nav.Link className="ml-4" ><strong className="brand-text">{loggedInUser.name}</strong></Nav.Link> :
+                                <Button className="color-btn ml-4" as={Link} to="/login" variant="primary">Login</Button>}
                         </Nav>
                     </Navbar.Collapse>
                 </div>
