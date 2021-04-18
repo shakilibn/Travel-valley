@@ -20,7 +20,7 @@ const Destinations = () => {
         <section className="container d-flex justify-content-around mt-5 pt-4 text-center">
             <div>
                 <h4 className="text-center brand-text2">Places</h4>
-                <h1 className="text-center mb-4">Hundreds of...<span className="brand-text">Destinations Worldwide.</span> </h1>
+                <h1 className="text-center mb-4 text-muted">Hundreds of...<span className="brand-text">Destinations Worldwide.</span> </h1>
                 <p className="text-center mb-4 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero odit a doloribus dignissimos quos, sequi itaque in enim optio?</p>
                 <div>
                     {isExplore ?

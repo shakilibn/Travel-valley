@@ -1,0 +1,22 @@
+.form-container {
+    background-color: aquamarine;
+    width: 100%;
+}
+.form-area {
+    width:600px;
+    border-radius: 5px;
+    /* margin:10%; */
+    padding:10px;
+    height: 400px;
+    background-color:white;
+    color:#282846;
+    /* box-shadow: 4px 4px 10px lightgrey; */
+}
+.input-style {
+    width:48% !important;
+    display:inline-block !important;
+    background-color: rgb(213, 228, 208) !important;
+}
+.input-textarea {
+    background-color: rgb(213, 228, 208) !important;
+}
