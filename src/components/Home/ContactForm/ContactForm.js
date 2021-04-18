@@ -7,7 +7,7 @@ const ContactForm = () => {
         alert('Thank you..! We will contact you as soon as possible');
     }
     return (
-        <div>
+        <section>
             < h5 className="text-center mt-5 pt-5 brand-text" > Contact</h5 >
             <h2 className="text-center mb-4 text-muted">Let us handle your <br /> project, professionally</h2>
 
@@ -29,7 +29,7 @@ const ContactForm = () => {
 
                 </div>
             </div>
-        </div >
+        </section >
     );
 };
 
